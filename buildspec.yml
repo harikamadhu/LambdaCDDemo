@@ -2,7 +2,7 @@ version: 0.1
 phases:
   install:
   run-time versions:
-    python3.6
+    python: 3.6
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket Harika-lambda-pipeline --output-template-file outputSamTemplate.yaml
 artifacts:
